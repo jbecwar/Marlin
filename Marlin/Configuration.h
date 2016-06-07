@@ -262,9 +262,9 @@
   //#define  DEFAULT_Kd 440
 
   //From AutoTune: -James
-  #define  DEFAULT_Kp 39.41
-  #define  DEFAULT_Ki 4.26
-  #define  DEFAULT_Kd 91.04
+  #define  DEFAULT_Kp 43.15
+  #define  DEFAULT_Ki 5.12
+  #define  DEFAULT_Kd 90.89
 
 
 #endif // PIDTEMP
@@ -689,7 +689,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,96}  // default steps per unit for Ultimaker  //should be 4000 for m5 screws --james
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80*2,80*2,4000*2,96*2}  // default steps per unit for Ultimaker  //should be 4000 for m5 screws --james
 #define DEFAULT_MAX_FEEDRATE          {250, 250, 2, 22}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,5,2000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
@@ -843,7 +843,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // This option overrides the default number of encoder pulses needed to
 // produce one step. Should be increased for high-resolution encoders.
 //
-//#define ENCODER_PULSES_PER_STEP 1
+#define ENCODER_PULSES_PER_STEP 1
 
 //
 // Use this option to override the number of step signals required to
