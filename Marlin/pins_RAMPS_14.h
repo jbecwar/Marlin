@@ -129,7 +129,7 @@
 #endif
 
 #if MB(RAMPS_14_SF) || MB(RAMPS_13_SF) || ENABLED(IS_RAMPS_EFB)
-  #define HEATER_1_PIN     -1
+  #define HEATER_1_PIN     4   //TODO: James changed, Seems like pin 4 is the catch all... to simulate a dual extruder.
 #else
   #define HEATER_1_PIN      9   // EXTRUDER 2 (FAN On Sprinter)
 #endif
